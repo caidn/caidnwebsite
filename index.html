@@ -13,15 +13,25 @@
     <link rel="stylesheet" href="aero.css">
     <link rel="stylesheet" href="logo.css">
     <link rel="stylesheet" href="video-cards.css">
+    <script src="mobile-menu.js" defer>
+    </script>
   </head>
   <body>
     <div class="sky" aria-hidden="true">
     </div>
     <header class="site-header">
+      <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" aria-label="Open navigation menu">
+        <span>
+        </span>
+        <span>
+        </span>
+        <span>
+        </span>
+      </button>
       <a class="brand" href="#top" aria-label="Caidn home">
         <img class="cmb-logo" src="images/cmb-logo2.png" alt="CMB">
       </a>
-      <nav aria-label="Main navigation">
+      <nav id="main-navigation" aria-label="Main navigation">
         <a href="#work">
           WORK
         </a>

@@ -1,0 +1,91 @@
+/* Latest-video cards on the homepage */
+.work-grid {
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+
+.video-card .card-art {
+
+  background: #0b2855;
+
+  border-radius: 0;
+
+  box-shadow: 0 2px 0 rgba(255, 255, 255, 0.7), 0 7px 12px rgba(0, 27, 58, 0.62);
+}
+
+
+.video-card .card-art img {
+
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  filter: saturate(1.08) contrast(1.04);
+
+  transition: transform 0.3s ease;
+}
+
+.video-card .card-art::after {
+
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.42) 0%, rgba(255, 255, 255, 0.06) 20%, transparent 46%, rgba(3, 26, 61, 0.18) 100%);
+
+  box-shadow: inset 0 0 0 1px rgba(220, 250, 255, 0.66), inset 0 16px 28px rgba(255, 255, 255, 0.15), inset 0 -12px 20px rgba(0, 29, 65, 0.22);
+
+  pointer-events: none;
+}
+
+
+.video-card:hover .card-art img {
+
+  transform: scale(1.04);
+}
+
+
+.play-badge {
+
+  position: absolute;
+
+  left: 50%;
+
+  top: 50%;
+
+  display: grid;
+
+  width: 58px;
+
+  height: 42px;
+
+  place-items: center;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 2;
+
+  border-radius: 4px;
+}
+
+
+@media (max-width: 760px) {
+
+  .work-grid {
+
+    grid-template-columns: 1fr;
+  }
+}

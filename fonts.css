@@ -1,0 +1,27 @@
+/* Coolvetica is used when it is installed on the visitor's device. */
+:root {
+  --display-font: "Coolvetica", "Arial Narrow", Arial, sans-serif;
+  --body-font: "Coolvetica", "Arial Narrow", Arial, sans-serif;
+}
+
+body,
+button,
+input,
+textarea,
+select,
+.brand,
+h1,
+h2,
+h3,
+.card-caption h3,
+.window-body p,
+.game-label,
+.music-label,
+.edit-title,
+.contact-card strong {
+  font-family: var(--body-font) !important;
+}
+
+body.u-body {
+  font-family: var(--body-font) !important;
+}

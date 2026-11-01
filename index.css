@@ -494,7 +494,7 @@ h1 em,h2 em {
   animation:slide 24s linear infinite
 }
 .marquee b {
-  color:var(--lime);
+  color:#fff;
   margin:0 14px
 }
 @keyframes slide {

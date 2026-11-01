@@ -486,7 +486,7 @@ h1 em,h2 em {
   letter-spacing:2px;
   white-space:nowrap;
   overflow:hidden;
-  transform:rotate(-1deg) scale(1.01);
+  transform:none;
   padding:14px 0
 }
 .marquee div {
